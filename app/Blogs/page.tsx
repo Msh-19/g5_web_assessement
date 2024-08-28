@@ -15,7 +15,7 @@ const MainBlogPage = () => {
     <div className="bg-white">
       <Header />
 
-      {/* <BlogPage
+      <BlogPage
         title={"The essential guide to Competitive Programming"}
         authorName={"chaltu kebede"}
         authorRole={"software engineer"}
@@ -30,10 +30,20 @@ follow to see outstanding results in a short period of time.`}
           `,
           `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
         ]}
-      /> */}
+      />
 
-      <BlogHeader />
-      <BlogCard
+      {/* <BlogHeader /> */}
+      {/* <BlogCard
+        title={"The essential guide to Competitive Programming"}
+        author={"Yididiya Kebede"}
+        date={"Apr 16, 2022"}
+        description={"SOFTWARE ENGINEER"}
+        subheading={"Tab System On React : 3 ways to do it. "}
+        tags={[`UI/UX`,`Development`]}
+        text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea "}
+        mainImageUrl={profilePic} */}
+      {/* /> */}
+      {/* <BlogCard
         title={"The essential guide to Competitive Programming"}
         author={"Yididiya Kebede"}
         date={"Apr 16, 2022"}
@@ -42,8 +52,8 @@ follow to see outstanding results in a short period of time.`}
         tags={[`UI/UX`,`Development`]}
         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea "}
         mainImageUrl={profilePic}
-      />
-      <BlogCard
+      /> */}
+      {/* <BlogCard
         title={"The essential guide to Competitive Programming"}
         author={"Yididiya Kebede"}
         date={"Apr 16, 2022"}
@@ -52,17 +62,7 @@ follow to see outstanding results in a short period of time.`}
         tags={[`UI/UX`,`Development`]}
         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea "}
         mainImageUrl={profilePic}
-      />
-      <BlogCard
-        title={"The essential guide to Competitive Programming"}
-        author={"Yididiya Kebede"}
-        date={"Apr 16, 2022"}
-        description={"SOFTWARE ENGINEER"}
-        subheading={"Tab System On React : 3 ways to do it. "}
-        tags={[`UI/UX`,`Development`]}
-        text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea "}
-        mainImageUrl={profilePic}
-      />
+      /> */}
     </div>
   );
 };
