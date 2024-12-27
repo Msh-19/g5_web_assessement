@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import RelatedPosts from "./RelatedBlogs";
-import relatedImages from "@/public/Images/RelatedPosts.svg"
 
 interface BlogPageProps {
   title: string;
@@ -11,7 +10,6 @@ interface BlogPageProps {
   date: string;
   mainImage: string;
   content: string;
-  article: string[]; // Array of paragraphs
   // add related posts check endpoints
 }
 
@@ -23,7 +21,6 @@ const BlogPage = ({
   date,
   mainImage,
   content,
-  article,
 }: BlogPageProps) => {
 
   const relatedPosts = [
@@ -31,7 +28,7 @@ const BlogPage = ({
       id: 1,
       title: "The Essential Guide to Competitive Programming",
       description: "A comprehensive guide to understanding data structures and algorithms.",
-      imageUrl: relatedImages,
+      imageUrl: "/path/to/image1.jpg",
       author: "John Doe",
       date: "Aug 27, 2024",
     },
@@ -39,7 +36,7 @@ const BlogPage = ({
       id: 2,
       title: "Understanding Algorithm Complexity",
       description: "A deep dive into time and space complexity analysis.",
-      imageUrl: relatedImages,
+      imageUrl: "/path/to/image2.jpg",
       author: "Jane Smith",
       date: "Aug 15, 2024",
     },
@@ -81,17 +78,10 @@ const BlogPage = ({
 
       {/* Content Section */}
       <div className="prose max-w-none">
-        <p className="text-xl font-bold leading-relaxed text-black">{content}</p>
-        {article.map((paragraph, index) => (
-          <p key={index} className="text-gray-700 mt-4">
-            {paragraph}
-          </p>
-        ))}
+        <p className="text-xl leading-relaxed text-gray-800">{content}</p>
       </div>
-
-      {/* Related Posts Section */}
-      <div className="mt-12">
-        <RelatedPosts posts={relatedPosts} />
+      <div>
+        <RelatedPosts posts={relatedPosts}/>
       </div>
     </div>
   );

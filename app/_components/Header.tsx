@@ -1,35 +1,30 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import Logo from "@/public/Images/A2SVLogo.svg"
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center p-4 bg-white">
-      <Link href="/" className="text-2xl font-bold text-black">
-        <Image 
-        src={Logo}
-        alt={'A2SV logo'}        
-        />
+    <header className="flex justify-between items-center p-4 bg-white shadow-md">
+      <Link href="/">
+        <a className="text-2xl font-bold text-black">Logo</a>
       </Link>
       <nav className="flex space-x-6">
-        <Link href="#home" className="text-gray-700 hover:text-blue-500">
-          Home
+        <Link href="#home">
+          <a className="text-gray-700 hover:text-blue-500">Home</a>
         </Link>
-        <Link href="#teams" className="text-gray-700 hover:text-blue-500">
-          Teams
+        <Link href="#teams">
+          <a className="text-gray-700 hover:text-blue-500">Teams</a>
         </Link>
-        <Link href="#success-stories" className="text-gray-700 hover:text-blue-500">
-          Success Stories
+        <Link href="#success-stories">
+          <a className="text-gray-700 hover:text-blue-500">Success Stories</a>
         </Link>
-        <Link href="#about-us" className="text-gray-700 hover:text-blue-500">
-          About Us
+        <Link href="#about-us">
+          <a className="text-gray-700 hover:text-blue-500">About Us</a>
         </Link>
-        <Link href="#blogs" className="text-gray-700 hover:text-blue-500">
-          Blogs
+        <Link href="#blogs">
+          <a className="text-gray-700 hover:text-blue-500">Blogs</a>
         </Link>
-        <Link href="#get-involved" className="text-gray-700 hover:text-blue-500">
-          Get Involved
+        <Link href="#get-involved">
+          <a className="text-gray-700 hover:text-blue-500">Get Involved</a>
         </Link>
       </nav>
       <div className="flex space-x-4">
